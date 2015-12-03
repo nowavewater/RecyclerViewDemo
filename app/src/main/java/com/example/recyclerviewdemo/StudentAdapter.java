@@ -127,9 +127,10 @@ public class StudentAdapter extends RecyclerView.Adapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    // Handle click event
                     Context context = view.getContext();
                     Student student = studentList.get(getLayoutPosition());
-                    Toast.makeText(context, student.getId(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, Integer.toString(student.getId()), Toast.LENGTH_LONG).show();
                 }
             });
         }
